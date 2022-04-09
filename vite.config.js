@@ -1,4 +1,5 @@
 import fs from 'fs';
+import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import viteRestart from 'vite-plugin-restart';
 import sassGlobImports from 'vite-plugin-sass-glob-import';
@@ -32,22 +33,21 @@ function parseFile(html) {
   };
 }
 
-/** TODO: Make option */
-const template = ({ scripts, links, meta }) => {
-  return `
-{% html at head %}
-<script type="module" src="http://localhost:3300/@vite/client"></script>
-${meta.toString()}
-${links.toString()}
-{% endhtml %}
+function twigTest(options = {}) {
+  const { outputFile, template } = Object.assign(
+    {},
+    {
+      outputFile: './templates/_partials/vite.twig',
+      template({ scripts, links, meta }) {
+        return `
+{% html at head %}${meta.toString()}${links.toString()}{% endhtml %}
 {% html at endBody %}${scripts.toString()}{% endhtml %}
 `;
-};
+      },
+    },
+    options,
+  );
 
-/** TODO: Make option */
-const outputFile = './templates/_partials/vite.twig';
-
-function twigTest(options = {}) {
   let config = null;
   return {
     name: 'twig:test',
@@ -55,15 +55,28 @@ function twigTest(options = {}) {
       config = resolvedConfig;
     },
     buildStart({ input }) {
+      const { mode } = config;
+      if (mode === 'production') {
+        return;
+      }
+
       const inputFile = fs.readFileSync(input);
       const { scripts, links, meta } = parseFile(inputFile.toString());
-      // eslint-disable-next-line no-console
-      console.log({ config });
+
       fs.writeFileSync(outputFile, template({ scripts, links, meta }));
     },
-    transformIndexHtml(html) {
+    transformIndexHtml(html, ctx) {
+      const { mode } = config;
+      if (mode !== 'production') {
+        return;
+      }
+
       const { scripts, links, meta } = parseFile(html);
       fs.writeFileSync(outputFile, template({ scripts, links, meta }));
+    },
+    closeBundle() {
+      console.log('Removing src files in dist ...');
+      fs.rmSync(path.resolve(config.publicDir, './src'), { recursive: true, force: true });
     },
   };
 }

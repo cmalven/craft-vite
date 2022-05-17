@@ -1,29 +1,23 @@
 {
-  "repositories": [],
-
-  "require": {
-    "craftcms/cms": "^3.7.0",
-    "craftcms/redactor": "^2.10",
-    "marionnewlevant/twig-perversion": "^2.2",
-    "nystudio107/craft-autocomplete": "^1.10",
-    "nystudio107/craft-emptycoalesce": "^1.0",
-    "topshelfcraft/wordsmith": "3.3.0.1",
-    "vlucas/phpdotenv": "^5.4.0"
-  },
-
-  "require-dev": {
-    "yiisoft/yii2-shell": "^2.0.3"
-  },
-
-  "config": {
-    "allow-plugins": {
-      "craftcms/plugin-installer": true,
-      "yiisoft/yii2-composer": true
+    "repositories": [],
+    "require": {
+        "craftcms/cms": "^3.7.0",
+        "nystudio107/craft-autocomplete": "^1.10",
+        "nystudio107/craft-emptycoalesce": "^1.0",
+        "vlucas/phpdotenv": "^5.4.0"
     },
-    "sort-packages": true,
-    "optimize-autoloader": true,
-    "platform": {
-      "php": "7.4"
+    "require-dev": {
+        "yiisoft/yii2-shell": "^2.0.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "craftcms/plugin-installer": true,
+            "yiisoft/yii2-composer": true
+        },
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.4"
+        }
     }
-  }
 }

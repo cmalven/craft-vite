@@ -1,4 +1,4 @@
-dateModified: 1651677808
+dateModified: 1652801069
 email:
   fromEmail: chris@malven.co
   fromName: 'Craft Vite Server Test'
@@ -61,10 +61,6 @@ plugins:
     edition: standard
     enabled: false
     schemaVersion: 1.0.0
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
   seomatic:
     edition: standard
     enabled: false
@@ -78,18 +74,10 @@ plugins:
     edition: standard
     enabled: false
     schemaVersion: 1.0.0
-  twig-perversion:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   typedlinkfield:
     edition: standard
     enabled: false
     schemaVersion: 1.0.0
-  wordsmith:
-    edition: standard
-    enabled: true
-    schemaVersion: 0.0.0.0
 system:
   edition: solo
   live: true

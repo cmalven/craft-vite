@@ -9,9 +9,6 @@
 
 return [
     '*' => [
-        // This appId is used to generate a unique prefix for session cookies and cache locations across our dev environments
-        'appId'                              => getenv('PRIMARY_SITE_URL'),
-
         // FUZZY SEARCH
         'defaultSearchTermOptions' => array(
             'subLeft' => true,
@@ -21,7 +18,6 @@ return [
         // ASSETS
         'imageDriver'                        => getenv('IMAGE_DRIVER'),
         'defaultImageQuality'                => getenv('DEFAULT_IMAGE_QUALITY'),
-        'extraAllowedFileExtensions'         => getenv('EXTRA_ALLOWED_FILE_EXTENSIONS'),
         'maxUploadFileSize'                  => '4M',
         'extraFileKinds' => [
             'svg' => [
@@ -45,7 +41,6 @@ return [
         // MISC
         'devMode'                            => filter_var(getenv('DEV_MODE'), FILTER_VALIDATE_BOOLEAN),
         'phpMaxMemoryLimit'                  => getenv('PHP_MAX_MEMORY_LIMIT'),
-        'overridePhpSessionLocation'         => getenv('OVERRIDE_PHP_SESSION_LOCATION'),
         'allowUpdates'                       => false,
         'allowAdminChanges'                  => false,
         'maxRevisions'                       => 15,

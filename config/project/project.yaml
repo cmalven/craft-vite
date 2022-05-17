@@ -1,4 +1,4 @@
-dateModified: 1652801168
+dateModified: 1652801655
 email:
   fromEmail: chris@malven.co
   fromName: 'Craft Vite Server Test'
@@ -83,10 +83,11 @@ system:
   edition: solo
   live: true
   name: 'Craft Vite Server Test'
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null

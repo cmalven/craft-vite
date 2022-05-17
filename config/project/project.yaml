@@ -1,10 +1,11 @@
-dateModified: 1652801069
+dateModified: 1652801168
 email:
   fromEmail: chris@malven.co
   fromName: 'Craft Vite Server Test'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    8b9ee6bf-cea5-4495-8019-6a46ef356282: 'Public Schema' # Public Schema
     861e167e-8a7c-45ee-84d8-e7ac3471816f: 'Craft Vite Server Test' # Craft Vite Server Test
     ce808882-c1c0-42c1-931f-b866ad61dce2: 'Craft Vite Server Test' # Craft Vite Server Test
     eaf6f1d3-dcb6-4811-9491-a5cf50bdcf33: Common # Common
@@ -15,7 +16,7 @@ plugins:
     schemaVersion: 1.0.0
   aws-s3:
     edition: standard
-    enabled: false
+    enabled: true
     schemaVersion: '1.2'
   blitz:
     edition: standard

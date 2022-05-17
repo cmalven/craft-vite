@@ -3,7 +3,6 @@ import viteRestart from 'vite-plugin-restart';
 import { vitePluginCraftCms } from 'vite-plugin-craftcms';
 import sassGlobImports from 'vite-plugin-sass-glob-import';
 import legacy from '@vitejs/plugin-legacy';
-import Inspect from 'vite-plugin-inspect';
 
 // https://vitejs.dev/config/
 
@@ -33,7 +32,6 @@ export default defineConfig(({ _command, mode }) => {
       viteRestart({
         reload: ['./templates/**/*'],
       }),
-      Inspect(),
       vitePluginCraftCms({
         outputFile: './templates/_partials/vite.twig',
         devServerBaseAddress: process.env.VITE_DEV_BASE_ADDRESS || 'http://localhost',

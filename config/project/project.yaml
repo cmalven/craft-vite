@@ -1,10 +1,11 @@
-dateModified: 1651677808
+dateModified: 1652801655
 email:
   fromEmail: chris@malven.co
   fromName: 'Craft Vite Server Test'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    8b9ee6bf-cea5-4495-8019-6a46ef356282: 'Public Schema' # Public Schema
     861e167e-8a7c-45ee-84d8-e7ac3471816f: 'Craft Vite Server Test' # Craft Vite Server Test
     ce808882-c1c0-42c1-931f-b866ad61dce2: 'Craft Vite Server Test' # Craft Vite Server Test
     eaf6f1d3-dcb6-4811-9491-a5cf50bdcf33: Common # Common
@@ -15,7 +16,7 @@ plugins:
     schemaVersion: 1.0.0
   aws-s3:
     edition: standard
-    enabled: false
+    enabled: true
     schemaVersion: '1.2'
   blitz:
     edition: standard
@@ -61,10 +62,6 @@ plugins:
     edition: standard
     enabled: false
     schemaVersion: 1.0.0
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
   seomatic:
     edition: standard
     enabled: false
@@ -78,26 +75,19 @@ plugins:
     edition: standard
     enabled: false
     schemaVersion: 1.0.0
-  twig-perversion:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   typedlinkfield:
     edition: standard
     enabled: false
     schemaVersion: 1.0.0
-  wordsmith:
-    edition: standard
-    enabled: true
-    schemaVersion: 0.0.0.0
 system:
   edition: solo
   live: true
   name: 'Craft Vite Server Test'
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null

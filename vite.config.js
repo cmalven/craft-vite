@@ -6,11 +6,11 @@ import legacy from '@vitejs/plugin-legacy';
 
 // https://vitejs.dev/config/
 
-export default defineConfig(({ _command, mode }) => {
+export default defineConfig(({ command, mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   return {
-    base: '/dist/',
+    base: command === 'serve' ? '' : '/dist/',
     publicDir: './src/static',
     server: {
       port: process.env.VITE_DEV_PORT || 3000,

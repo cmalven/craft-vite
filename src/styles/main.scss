@@ -27,11 +27,12 @@ body {
   }
 }
 
-.image-test {
+img,
+.image-test-sass {
   width: 98px;
   height: 81px;
+}
 
-  &.image-test-sass {
-    background: url('/images/svg/icon/logo.svg') no-repeat top left;
-  }
+.image-test-sass {
+  background: url('/images/svg/icon/logo.svg') no-repeat top left;
 }

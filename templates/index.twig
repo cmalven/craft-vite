@@ -9,12 +9,10 @@
   
   {# Test image in HTML #}
   <p>Twig Image Test</p>
-  <div class="image-test">
-    {% import "_partials/vite" as vite %}
-    <img src="{{ vite.url('/images/svg/icon/logo.svg') }}" alt="">
-  </div>
-  
+  {% import "_partials/vite" as vite %}
+  <img src="{{ vite.url('/images/svg/icon/logo.svg') }}" alt="">
+
   {# Test image in CSS #}
   <p>Sass Image Test</p>
-  <div class="image-test image-test-sass"></div>
+  <div class="image-test-sass"></div>
 {% endblock %}

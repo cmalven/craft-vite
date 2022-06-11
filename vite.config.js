@@ -1,4 +1,5 @@
 import { defineConfig, loadEnv } from 'vite';
+import mkcert from 'vite-plugin-mkcert';
 import viteRestart from 'vite-plugin-restart';
 import { vitePluginCraftCms } from 'vite-plugin-craftcms';
 import sassGlobImports from 'vite-plugin-sass-glob-import';
@@ -15,6 +16,10 @@ export default defineConfig(({ command, mode }) => {
     server: {
       port: process.env.VITE_DEV_PORT || 3000,
       host: true,
+      hmr: {
+        host: process.env.VITE_DEV_BASE_ADDRESS, // Necessary only if `https` is true
+      },
+      https: true,
     },
     build: {
       emptyOutDir: true,
@@ -25,6 +30,7 @@ export default defineConfig(({ command, mode }) => {
       },
     },
     plugins: [
+      mkcert(),
       legacy({
         targets: ['defaults', 'not IE 11'],
       }),
@@ -34,7 +40,7 @@ export default defineConfig(({ command, mode }) => {
       }),
       vitePluginCraftCms({
         outputFile: './templates/_partials/vite.twig',
-        devServerBaseAddress: process.env.VITE_DEV_BASE_ADDRESS || 'http://localhost',
+        devServerBaseAddress: process.env.VITE_DEV_BASE_ADDRESS,
       }),
     ],
   };

@@ -19,7 +19,7 @@ export default defineConfig(({ command, mode }) => {
       hmr: {
         host: process.env.VITE_DEV_BASE_ADDRESS, // Necessary only if `https` is true
       },
-      https: true,
+      https: false,
     },
     build: {
       emptyOutDir: true,

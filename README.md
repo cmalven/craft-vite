@@ -7,6 +7,15 @@ Test of Craft + Vite using [vite-plugin-craftcms](https://www.npmjs.com/package/
 - `composer install`
 - `cp env.sample .env` and modify the contents of `.env` to match your setup
 
+### DDEV
+
+You'll need [Docker](https://www.docker.com/) and [DDEV](https://ddev.com) installed on your machine,
+then run:
+
+```bash
+ddev start
+```
+
 ### Front End Dependencies
 
 First, make sure you have [NodeJS](http://nodejs.org) installed. Then:

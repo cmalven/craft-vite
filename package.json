@@ -24,6 +24,6 @@
   },
   "scripts": {
     "start": "vite & gulp",
-    "build": "vite build && gulp build"
+    "build": "gulp build && vite build"
   }
 }

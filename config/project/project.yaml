@@ -1,84 +1,13 @@
-dateModified: 1652801655
+dateModified: 1671640552
 email:
   fromEmail: chris@malven.co
   fromName: 'Craft Vite Server Test'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    8b9ee6bf-cea5-4495-8019-6a46ef356282: 'Public Schema' # Public Schema
-    861e167e-8a7c-45ee-84d8-e7ac3471816f: 'Craft Vite Server Test' # Craft Vite Server Test
-    ce808882-c1c0-42c1-931f-b866ad61dce2: 'Craft Vite Server Test' # Craft Vite Server Test
-    eaf6f1d3-dcb6-4811-9491-a5cf50bdcf33: Common # Common
-plugins:
-  assetrev:
-    edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
-  aws-s3:
-    edition: standard
-    enabled: true
-    schemaVersion: '1.2'
-  blitz:
-    edition: standard
-    enabled: false
-    licenseKey: NQMES5XYIN9AOOOL0XNPEFUL
-    schemaVersion: 3.10.0
-  cp-field-inspect:
-    edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
-  cp-nav:
-    edition: standard
-    enabled: false
-    schemaVersion: 2.0.7
-    settings:
-      originalNavHash:
-        __assoc__:
-          -
-            - e76ddc30-a77b-424a-aea3-dc4d11423161
-            - W3sibGFiZWwiOiJEYXNoYm9hcmQiLCJ1cmwiOiJkYXNoYm9hcmQiLCJmb250SWNvbiI6ImdhdWdlIn0seyJsYWJlbCI6IlNFT21hdGljIiwidXJsIjoic2VvbWF0aWMiLCJpY29uIjoiL1VzZXJzL2NtYWx2ZW4vQ29kZS9jcmFmdC12aXRlLXNlcnZlci10ZXN0L3ZlbmRvci9ueXN0dWRpbzEwNy9jcmFmdC1zZW9tYXRpYy9zcmMvaWNvbi1tYXNrLnN2ZyIsInN1Ym5hdiI6eyJkYXNoYm9hcmQiOnsibGFiZWwiOiJEYXNoYm9hcmQiLCJ1cmwiOiJzZW9tYXRpYy9kYXNoYm9hcmQifSwiZ2xvYmFsIjp7ImxhYmVsIjoiR2xvYmFsIFNFTyIsInVybCI6InNlb21hdGljL2dsb2JhbC9nZW5lcmFsIn0sImNvbnRlbnQiOnsibGFiZWwiOiJDb250ZW50IFNFTyIsInVybCI6InNlb21hdGljL2NvbnRlbnQifSwic2l0ZSI6eyJsYWJlbCI6IlNpdGUgU2V0dGluZ3MiLCJ1cmwiOiJzZW9tYXRpYy9zaXRlL2lkZW50aXR5In0sInRyYWNraW5nIjp7ImxhYmVsIjoiVHJhY2tpbmcgU2NyaXB0cyIsInVybCI6InNlb21hdGljL3RyYWNraW5nL2d0YWcifSwicGx1Z2luIjp7ImxhYmVsIjoiUGx1Z2luIFNldHRpbmdzIiwidXJsIjoic2VvbWF0aWMvcGx1Z2luIn19fSx7InVybCI6InV0aWxpdGllcyIsImxhYmVsIjoiVXRpbGl0aWVzIiwiZm9udEljb24iOiJ0b29sIiwiYmFkZ2VDb3VudCI6Mn0seyJ1cmwiOiJzZXR0aW5ncyIsImxhYmVsIjoiU2V0dGluZ3MiLCJmb250SWNvbiI6InNldHRpbmdzIn0seyJ1cmwiOiJwbHVnaW4tc3RvcmUiLCJsYWJlbCI6IlBsdWdpbiBTdG9yZSIsImZvbnRJY29uIjoicGx1Z2luIn1d
-  dumper:
-    edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
-  empty-coalesce:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  environment-label:
-    edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
-  expanded-singles:
-    edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
-  imager-x:
-    edition: lite
-    enabled: false
-    licenseKey: V6BUKU5FT2MLMZULJDYYUOS7
-    schemaVersion: 3.0.0
-  matrixmate:
-    edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
-  seomatic:
-    edition: standard
-    enabled: false
-    licenseKey: 3XSO5PAWMIHE9997NNCL9WUL
-    schemaVersion: 3.0.11
-  super-table:
-    edition: standard
-    enabled: false
-    schemaVersion: 2.2.1
-  svgplaceholder:
-    edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
-  typedlinkfield:
-    edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
+    9014f320-4210-4cda-b5f0-511899dbc171: 'Craft Vite Server Test'
+    03354686-db09-47bf-89c2-c813f4793759: Common
+    ad06bd46-eded-48a6-b927-d7e8e268bfcd: 'Craft Vite Server Test'
 system:
   edition: solo
   live: true
@@ -87,7 +16,6 @@ system:
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
-  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null

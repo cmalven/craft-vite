@@ -1,9 +1,8 @@
 baseUrl: $PRIMARY_SITE_URL
-enabled: true
 handle: default
 hasUrls: true
 language: en-US
 name: 'Craft Vite Server Test'
 primary: true
-siteGroup: 861e167e-8a7c-45ee-84d8-e7ac3471816f # Craft Vite Server Test
+siteGroup: ad06bd46-eded-48a6-b927-d7e8e268bfcd
 sortOrder: 1

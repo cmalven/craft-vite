@@ -1,5 +1,5 @@
 name: craft-vite-boilerplate
-type: php
+type: craftcms
 docroot: web
 php_version: "8.0"
 webserver_type: nginx-fpm

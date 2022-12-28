@@ -3,8 +3,6 @@
 Test of Craft + Vite using [vite-plugin-craftcms](https://www.npmjs.com/package/vite-plugin-craftcms)
 
 ## Setup
-- Create a MySQL-compatible database called `craft-vite-boilerplate`
-- `composer install`
 - `cp env.sample .env` and modify the contents of `.env` to match your setup
 
 ### DDEV
@@ -14,6 +12,7 @@ then run:
 
 ```bash
 ddev start
+ddev composer install
 ```
 
 ### Front End Dependencies

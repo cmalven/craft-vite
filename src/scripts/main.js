@@ -1,5 +1,5 @@
 // Test asset loading
-const imageUrl = new URL('/images/svg/icon/logo.svg', import.meta.url).href;
+import imageUrl from '/images/svg/icon/logo.svg';
 const bgImage = document.createElement('img');
 const label = document.createElement('p');
 label.innerText = 'Javascript Image';
